@@ -17,6 +17,9 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
+img {
+  display: block;
+}
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--primiry-white-color);
@@ -28,6 +31,8 @@ body {
   width: 1134px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .list {
   list-style: none;
@@ -92,16 +97,21 @@ body {
 /* Hero */
 .hero {
   background-color: var(--main-text-color);
+  text-align: center;
 }
 .hero-title {
   color: var(--primiry-white-color);
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+
   letter-spacing: 0.02em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 48px;
 }
-
+.privileges-title {
+  margin-bottom: 120px;
+  margin-top: 120px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -123,6 +133,11 @@ body {
   line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border-radius: 4px;
+  min-width: 170px;
+  text-align: center;
+  border: 1px solid transparent;
 }
 .button.secondary:hover,
 .button.secondary:focus {
@@ -153,6 +168,12 @@ body {
 
 /* Section Examples works */
 
+.examples-margin {
+  margin-bottom: 120px;
+}
+.img-padding {
+  padding-bottom: 120px;
+}
 .examples-img {
   list-style: none;
   display: flex;
@@ -167,6 +188,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-text-color);
+  margin-bottom: 72px;
 }
 /* Team consist */
 
