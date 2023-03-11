@@ -72,7 +72,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
-.navigation-tools {
+.navigation-tools,
+.navigation {
   display: flex;
   align-items: center;
 }
@@ -88,9 +89,11 @@ body {
 .navigation-item:not(:last-child) {
   margin-right: 40px;
 }
+.adress.navigation-tools {
+  margin-left: auto;
+}
 .adress.list {
   display: flex;
-  margin-left: auto;
 }
 .adress-item:not(:last-child) {
   margin-right: 40px;
@@ -108,6 +111,9 @@ body {
 }
 /*Button*/
 
+.button.primary {
+  margin-bottom: 188px;
+}
 .button.secondary {
   background-color: #f4f4fd;
   color: var(--button-color);
@@ -129,6 +135,7 @@ body {
   color: var(--primiry-white-color);
   font-size: 56px;
   line-height: 1.07;
+  padding-top: 188px;
 
   letter-spacing: 0.02em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -176,6 +183,10 @@ body {
   color: var(--primiry-white-color);
 }
 /* Section Privileges*/
+
+.privileges-list {
+  display: flex;
+}
 .privileges-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -191,6 +202,7 @@ body {
 }
 .privileges-item {
   list-style: none;
+  padding-left: 24px;
 }
 
 /* Section Examples works */
@@ -201,12 +213,15 @@ body {
 .img-padding {
   padding-bottom: 120px;
 }
+.examles-item {
+  display: flex;
+}
 .examples-img {
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 24px;
 }
 .section-title {
   font-size: 36px;
@@ -225,19 +240,19 @@ body {
   background-color: #f4f4fd;
   list-style: none;
 }
-
+.team-item {
+  display: flex;
+}
 .team-img {
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 0px 32px;
   gap: 32px;
   background-color: var(--primiry-white-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  padding: 24px;
 }
 .team-title {
   font-weight: 500;
