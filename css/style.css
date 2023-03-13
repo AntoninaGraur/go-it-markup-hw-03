@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-  width: 1134px;
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 12px;
@@ -114,11 +114,6 @@ body {
 .button.primary {
   margin-bottom: 188px;
 }
-.button.secondary {
-  background-color: #f4f4fd;
-  color: var(--button-color);
-  cursor: pointer;
-}
 .buttons {
   list-style: none;
   margin-top: 96px;
@@ -177,6 +172,26 @@ body {
   background-color: #404bbf;
   color: var(--primiry-white-color);
 }
+.button.secondary:not(:last-child) {
+  margin-right: 24px;
+}
+.button.secondary {
+  background-color: #f4f4fd;
+  display: flex;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  color: var(--button-color);
+  padding: 12px 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
 .button.primary:hover,
 .button.primary:focus {
   background-color: #404bbf;
@@ -221,7 +236,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 24px;
+}
+.examples-img:not(:last-child) {
+  margin-right: 24px;
 }
 .section-title {
   font-size: 36px;
@@ -246,14 +263,14 @@ body {
 .team-img {
   list-style: none;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 32px;
   background-color: var(--primiry-white-color);
-  border-radius: 0px 0px 4px 4px;
-  padding: 24px;
+  margin-right: 24px;
 }
+.team-img:nth-child(4n) {
+  margin-right: 0px;
+}
+
 .team-title {
   font-weight: 500;
   font-size: 20px;
@@ -286,4 +303,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
+  width: 240px;
+  height: 110px;
+  margin-top: 16px;
 }
